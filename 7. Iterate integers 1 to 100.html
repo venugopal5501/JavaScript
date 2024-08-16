@@ -1,31 +1,29 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Iteration</title>
-    </head>
-    <body>
-        <p id="demo"></p>
-        <script>
-           for ( i=1;i<=100;i++){
-            if(i%3==0 && i%5==0){
-                document.getElementById('demo').innerHTML+= 'ThreeFive<br>'
+
+<head>
+    <title>Iteration</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        for (i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                document.getElementById('demo').innerHTML += 'ThreeFive<br>'
             }
-            else if(i%3==0){
-                document.getElementById('demo').innerHTML+= 'Three<br>'
+            else if (i % 3 == 0) {
+                document.getElementById('demo').innerHTML += 'Three<br>'
             }
-            else if(i%5==0)
-            {
-                document.getElementById('demo').innerHTML+= 'Five<br>'
+            else if (i % 5 == 0) {
+                document.getElementById('demo').innerHTML += 'Five<br>'
             }
-            else{
-                document.getElementById('demo').innerHTML+=i +'<br>';
+            else {
+                document.getElementById('demo').innerHTML += i + '<br>';
             }
-           }
-        
-           
-            
-            
-          
-        </script>
-    </body>
+        }
+
+    </script>
+</body>
+
 </html>
