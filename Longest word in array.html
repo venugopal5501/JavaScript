@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Array</title>
+</head>
+
+<body>
+    <p id="1"></p>
+    <script>
+        var app = prompt("Enter words separated by commas");
+        var bcc = app.split(',');
+        str(bcc);
+        function str(arrays) {
+            // var a=['sa','ravi','kumar','q'];
+            var b = arrays[0];
+            var c = arrays[0].length;
+            for (let i = 0; i <= arrays.length; i++) {
+                if (c < arrays[i].length) {
+                    c = arrays[i].length;
+                    b = arrays[i];
+                }
+                document.getElementById('1').innerHTML = b;
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
