@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Largest Element</title>
+        </head>
+        <body>
+            <p id="1"></p>
+            <script>
+                var a=(prompt("Enter value separated by comma"));
+                var b=a.split(',');
+                var d=b.map(Number);
+                largest(d);
+                function largest(large){
+                    var c=large[0];
+                    for(var i=0;i<large.length;i++)
+                {
+                    if(c<large[i]){
+                        c=large[i];
+                    }
+                    document.getElementById('1').innerHTML="The largest Value is "+c;
+                }
+                }
+                largest(d);
+                </script>
+            </body>
+    </html>
