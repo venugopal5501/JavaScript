@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Celsius to fahrenheit</title>
+</head>
+
+<body>
+    <a href="#" onclick="celsius()"> Celsius to fahrenheit</a>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function celsius() {
+            var a = parseInt(prompt("Enter 1 for Celsius to Fahrenheit and 2 for Fahrenheit to Celsius"));
+            if (a <= 2) {
+                if (a == 1) {
+                    var b = parseInt(prompt("Enter value for Celsius"))
+                    var c = b * 9 / 5 + 32;
+                    var d = alert("Answer is " + c)
+                    // document.getElementById('demo').innerHTML=c
+                }
+                if (a == 2) {
+                    var e = parseInt(prompt("Enter value for Fahrenheit"))
+                    var f = (e - 32) * 5 / 9;
+                    var g = alert("Answer is " + f);
+                    // document.getElementById('demo1').innerHTML=f
+                }
+            }
+            else {
+                alert("Not valid")
+            }
+        }
+    </script>
+</body>
+
+</html>
