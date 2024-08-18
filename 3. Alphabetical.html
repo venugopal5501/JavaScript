@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // var a=['car','ant','dog',"zap","ice"];
+
+        var a = prompt("Enter string separated by comma");
+        var b = a.split(",");
+        Alphabetical(b);
+
+        function Alphabetical(a) {
+            for (var i = 0; i < a.length - 1; i++) {
+                for (var j = 0; j < a.length - 1; j++) {
+                    if (a[j].toLowerCase() > a[j + 1].toLowerCase()) {
+                        var temp = a[j + 1];
+                        a[j + 1] = a[j];
+                        a[j] = temp;
+
+                    }
+
+                }
+            }
+
+            for (var i = 0; i < a.length; i++) {
+                var c = a[i].charAt(0).toUpperCase() + a[i].slice(1);
+                document.write(c + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>
