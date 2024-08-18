@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Binary to Decimal</title>
+</head>
+
+<body>
+    Enter Binary Value <input type="text" id="1">
+    <button onclick="Binary(document.getElementById('1').value)">Answer</button>
+    <p id="2"></p>
+
+    <script>
+        var a = parseInt();
+
+        function Binary(bin) {
+            var Decimal = 0;
+            var b = bin.length;
+            for (var i = 0; i < b; i++) {
+                if (bin[i] === '1') {
+                    Decimal = Decimal + Math.pow(2, b - 1 - i);
+                }
+
+
+            }
+            document.getElementById('2').innerHTML = Decimal;
+        }
+    </script>
+</body>
+
+</html>
