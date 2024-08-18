@@ -1,12 +1,23 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Capitalize</title>
-        </head>
-        <body>
-            <script>
-                var a='hai'
-                var b=
-                </script>
-            </body>
-    </html>
+
+<head>
+    <title>Capitalize</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("Enter string separated by comma");
+        var b = a.split(",");
+        capitalize(b);
+        function capitalize(upper) {
+            for (var i = 0; i < upper.length; i++) {
+                var c = upper[i].charAt(0).toUpperCase() + upper[i].slice(1);
+                document.write(c + "<br>");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
