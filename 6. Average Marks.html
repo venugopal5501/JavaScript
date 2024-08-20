@@ -1,65 +1,38 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Grade</title>
-        </head>
-        <body>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Marks</th>
-                    <th>Grade</th>
-                    </tr>
-                    <tr>
-                        <td>Anand</td>
-                        <td id="1">80</td>
-                        <td id="65"></td>
-                        
-                        </tr>
-                        <tr>
-                        <td>Kumar</td>
-                        <td id="2">77</td>
-                        <td id="65"></td>
-                        </tr>
-                        <tr>
-                        <td>Nandakumar</td>
-                        <td id="3">95</td>
-                        <td id="65"></td>
-                        </tr>
-                        <tr>
-                            <td>Manikandan</td>
-                            <td id="4">88</td>
-                            <td id="65"></td>
-                            </tr>
-                            <tr>
-                                <td>Palanisamy</td>
-                                <td id="5">68</td>
-                                <td id="66"></td>
-                                </tr>
-            
-                        </tr>
-                </table>
-            <button onclick="Grade()">Check Grade</button>
-            <script>
-                
-            
-                function Grade(){
-                    var i=parseInt(document.getElementById('1').textContent);
-                    var j=parseInt(document.getElementById('2').textContent);
-                    var k=parseInt(document.getElementById('3').textContent);
-                    var l=parseInt(document.getElementById('4').textContent);
-                    var m=parseInt(document.getElementById('5').textContent);
-                if(i<=90 || j<=90 ||k<=90 ||l<=90 ||m<=90 )
-            {
-                document.getElementById("65").innerHTML="c";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Enter marks</label>
+    <input type="number"  id="1"> <br>
+    <button onclick="find()">Click</button>
+    <p id="result"></p>
+    <script>
+        function find(){
+        var marks=document.getElementById("1").value
+        
+        
+        var grade;
+        
+          if (marks <= 100 && marks >= 90) {
+    grade="Grade: A";
+} else if (marks < 90 && marks >= 80) {
+    grade="Grade: B";
+} else if (marks < 80 && marks >= 70) {
+    grade="Grade: C";
+} else if (marks < 70 && marks >= 60) {
+    grade="Grade: D";
+} else {
+    grade="Grade: F";
+    
+}
 
-            }
-            else if(i<=60 || j<=60 ||k<=60 ||l<=60 ||m<=60 )
-            {
-                document.getElementById("66").innerHTML="f";
+document.getElementById("result").innerHTML=grade
 
-            }
         }
-                </script>
-            </body>
-    </html>
+    
+    </script>
+</body>
+</html>
